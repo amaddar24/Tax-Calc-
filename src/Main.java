@@ -7,7 +7,7 @@ public class Main {
         bands.add(50270 - 12571);
         bands.add(150000 - 50271);
         bands.add(150001);
-
+        //
         ArrayList<Double> percentages = new ArrayList<>();
         percentages.add(0.0);
         percentages.add(0.2);
