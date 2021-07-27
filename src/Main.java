@@ -14,12 +14,18 @@ public class Main {
         percentages.add(0.4);
         percentages.add(0.45);
 
-
         int PP = 63000;
         int i = 0;
         double tax = 0;
 
-        while ((i < bands.size()) && (PP > 0)) {
+        Band PA = new Band(12570,0);
+        Band BR = new Band(50270,0.2);
+        Band HR = new Band(150000, 0.4);
+        Band AR = new Band(0.45);
+
+
+        while ((i < 4) && (PP > 0)) {
+
             double band_rate = PP < bands.get(i) ? PP : bands.get(i);
             tax = tax + band_rate*percentages.get(i);
             PP = PP - bands.get(i);
